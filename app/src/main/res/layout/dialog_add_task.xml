@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="20sp"
+        android:fontFamily="@font/primary_bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/etl_dialog_save"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_dialog_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btn_dialog_save"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_secondary"
+        android:text="Save" />
+</LinearLayout>
